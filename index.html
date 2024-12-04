@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MyBooks</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="cabeçalho">
+    <div class="container">
+      <input type="checkbox" id="menu" class="container__botao">
+      <label for="menu">
+        <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+      </label>
+      <ul class="lista-menu">
+        <li class="lista-menu__titulo">Categorias</li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Livros</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Fanfics</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Taylor Swift</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Any Gabrielly</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Josh Beauchamp</a>
+        </li>
+      </ul>
+      <img src="img/Logo.svg" alt="Logo " class="container__imagem">
+    </div>
+    <div class="container">
+      <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos" class="container__imagem"></a>
+      <a href="#"><img src="img/Frame 98.svg" alt="Carrinhos de compras" class="container__imagem"></a>
+      <a href="#"><img src="img/Frame 3.svg" alt="Meu perfil" class="container__imagem"></a>
+    </div>
+  </header>
+
+  <section class="banner">
+    <h2 class="banner__titulo">Já sabe por onde começar?</h2>
+    <p class="banner__texto">Encontre em nossa estante o que precisa para seu mundo fantasioso!</p>
+    <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?">
+  </section>
+
+  <section class="carrossel">
+    <h2 class="carrossel__titulo">Novos lançamentos</h2>
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="img/LivroDaRomance.png"
+            alt="DarkRomance"></div>
+        <div class="swiper-slide"><img src="img/TaylorSwiftLivro.png"
+            alt="Taylor Swift: Biografia"></div>
+        <div class="swiper-slide"><img src="img/MyDearBeauany.png" alt="Beauany">
+        </div>
+        <div class="swiper-slide">
+          <img src="img/HarryPotter.png" alt="Fantasia" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/Bridgerton.png" alt="Romance" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/EnemiesToLovers.png" alt="Enemies to lovers" />
+        </div>
+      </div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+    </div>
+
+    <div class="card">
+      <div class="card__descrição">
+        <div class="descrição">
+          <h3 class="descrição__titulo">Talvez você também se interesse por:</h3>
+          <h2 class="descrição__titulo-livro">A Turnê do Coração Partido</h2>
+          <p class="descrição__texto">
+            Um livro inspirado na nossa amada loirinha!
+          </p>
+        </div>
+        <img src="img/ATurne.jfif" class="descrição__imagem" />
+      </div>
+      <div class="card__botões">
+        <ul class="botões">
+          <li class="botões__item">
+            <img src="img/Favoritos.svg" alt="Favoritar livro" />
+          </li>
+          <li class="botões__item">
+            <img src="img/Frame 98.svg" alt="Adicionar no carrinho de compras" />
+          </li>
+        </ul>
+        <a href="#" class="botões__ancora">Saiba mais</a>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="carrossel">
+    <h2 class="carrossel__titulo">Mais vendidos</h2>
+    <div class="swiper">
+
+      <div class="swiper-pagination"></div>
+
+      <div class="swiper-wrapper">
+       
+        <div class="swiper-slide"><img src="img/LivroDaRomance.png"
+            alt="Livro sobre o casal, não casal, mais shippados de todos os tempos"></div>
+        <div class="swiper-slide"><img src="img/MyDearBeauany.png" alt="Livro Beauany">
+        </div>
+        <div class="swiper-slide"><img src="img/Bridgerton.png" alt="Temos também o livro da nossa grande e fofoqueira família!">
+        </div>
+        <div class="swiper-slide"><img src="img/HarryPotter.png" alt="Livro de bruxarias!!"></div>
+        <div class="swiper-slide"><img src="img/TaylorSwiftLivro.png" alt="Livro sobre a nossa loirinha!"></div>
+        <div class="swiper-slide"><img src="img/EnemiesToLovers.png" alt="O bom e velho livro sobre inimigos que se apaixonam!"></div>
+      </div>
+
+     
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+    <div class="card">
+      
+      <div class="card__descrição">
+       
+        <div class="descrição">
+          <img src="img/Estrelas.png" alt="Avaliação 5 estrelas">
+          <h3 class="descrição__titulo">Autora do Mês</h3>
+          <h2 class="descrição__titulo-livro">Ali Hazelwood</h2>
+          <p class="descrição__texto">Dona de vários books famosinhos no TikTok!
+          </p>
+        </div>
+       
+        <img src="img/Escritora.webp" class="descrição__imagem">
+      </div>
+
+     
+      <div class="card__botões">
+        
+        <ul class="botões">
+          <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
+          <li class="botões__item"><img src="img/Frame 98.svg" alt="Adicionar no carrinho de compras"></li>
+        </ul>
+        
+        <a href="#" class="botões__ancora">Saiba mais</a>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="tópicos">
+    <h2 class="tópicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+    <ul class="tópicos__lista">
+      <li class="tópicos__item"><a href="#" class="tópicos__link">Taylor Swift</a></li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Grey's Anatomy</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Outer Banks</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Any Gabrielly</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Josh Beauchamp</a>
+      </li>
+    </ul>
+  </section>
+
+  <footer class="rodapé">
+    <div class="rodapé__logo">
+      <img src="img/Logo.svg" alt="Logo da empresa" />
+    </div>
+
+    <div class="rodapé__contatos">
+      <h3 class="rodapé__titulo">Meios de contato</h3>
+      <p class="rodapé__textos">
+        <a href="tel:+5511987654321">+55 19 98966-4591</a>
+      </p>
+      <p class="rodapé__textos">
+        <a href="mailto:contato@mybooks.com">contato@mybooks.com</a>
+      </p>
+    </div>
+
+    <div class="rodapé__redes">
+      <h3 class="rodapé__titulo">Redes sociais</h3>
+      <ul class="rodapé__lista">
+        <li class="rodapé__item"><a href="#" class="rodapé__link">Instagram</a></li>
+        <li class="rodapé__item"><a href="#" class="rodapé__link">Facebook</a></li>
+        <li class="rodapé__item"><a href="#" class="rodapé__link">Twitter</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+      },
+    });
+  </script>
+</body>
+
+</html>
